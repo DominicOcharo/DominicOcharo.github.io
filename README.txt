@@ -1,29 +1,36 @@
-Fractal by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Dominic Ocharo Portfolio
 
+Welcome to my portfolio website! This repository contains the code for my personal portfolio website, where I showcase my skills, projects, and experiences in the fields of Telecommunications Engineering, Data Science, Data Analysis, Power Apps Development, and Networking.
 
-A simple landing page template for showcasing mobile apps (although it'll definitely work
-for other stuff if you get rid of the phone :) Lightweight, fully responsive, and built on
-HTML5, Sass, and flexbox.
+## Overview
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+This website serves as a digital space where you can explore my journey, skills, and projects. Here's a brief overview of what you'll find:
 
-(* = not included)
+- **Header**: Introduces myself and provides links to my LinkedIn profile and resume.
+- **Projects**: Displays a collection of my projects categorized by different technologies and domains.
+- **Skills**: Highlights my skills in Power BI, SQL, Python programming, spreadsheets, and Tableau.
+- **Courses**: Lists the certifications I've obtained from various online platforms.
+- **Contacts**: Provides my contact information and links to my social media profiles.
 
-AJ
-aj@lkn.io | @ajlkn
+## Technologies Used
 
+- HTML
+- CSS
+- JavaScript
 
-Credits:
+## Project Structure
 
-	Demo Images:
-		Unsplash (unsplash.com)
+- **index.html**: Main HTML file containing the structure of the website.
+- **assets/**: Directory containing CSS and JavaScript files for styling and functionality.
+- **images/**: Directory containing images used in the website.
+- **README.md**: This file, containing information about the portfolio website.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+## How to View
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+To view my portfolio website, simply open the `index.html` file in a web browser.
+
+## Contact
+
+Feel free to reach out to me via email at ocharodominic01@gmail.com or connect with me on LinkedIn ([@dominic-ocharo](https://www.linkedin.com/in/dominic-ocharo-87a601212)).
+
+Thank you for visiting my portfolio!
