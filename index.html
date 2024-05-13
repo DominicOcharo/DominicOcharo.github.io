@@ -1,44 +1,61 @@
 <!DOCTYPE HTML>
 <!--
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Fractal by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Dominic Ocharo Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Dominic Ocharo Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* CSS for circular profile picture */
+            .profile-pic {
+                border-radius: 50%; /* Make it a circle */
+                overflow: hidden; /* Hide the parts outside the circle */
+                width: 200px; /* Set the width */
+                height: 200px; /* Set the height */
+                margin: 0 auto; /* Center the image */
+            }
+            .profile-pic img {
+                width: 100%; /* Make sure the image fits inside the circle */
+                height: auto; /* Keep aspect ratio */
+            }
+        </style>
+    </head>
+    <body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<div style="text-align:center;"><img src="images/profilepic.jpg" alt="" width="200" height="200"/></div>
-					<h1 align="center"><a href="#">Dominic Makana Ocharo</a></h1>
-					<h1 align="center"><a href="#">Portfolio Website</a></h1>
-					<p style="text-align: left;">
-						Welcome to my digital space! I am Dominic Makana Ocharo, a versatile professional with expertise in Telecommunications Engineering, Data Science, 
-						Data Analysis, Power Apps Development, and Networking. Leveraging my academic background from Jomo Kenyatta University of Agriculture and 
-						Technology, I bring over five years of hands-on experience to the tech arena. Explore my journey, skills, and projects as we delve into the 
-						dynamic world of innovation and technology. Get me on Linkedin:
-						 <a href="https://www.linkedin.com/in/dominic-ocharo-87a601212">@Dominic Ocharo</a><br /></a></p>
-					<style>
-							.centered-ul {
-							  display: flex;
-							  justify-content: center;
-							}
-					</style>
-					<ul class="centered-ul">
-						<li><a href="https://drive.google.com/file/d/1mflQ3b8i-XvECR4_dcCv-TMUarq9MUZt/view?usp=sharing" 
-							class="button primary icon solid fa-download">View Resume </a></li>
-						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">More</a></li>
-					</ul>
-				</div> </div>
-			</header>
+        <!-- Header -->
+            <header id="header">
+                <div class="content">
+                    <!-- Wrap the image inside a div with class "profile-pic" -->
+                    <div class="profile-pic">
+                        <img src="images/profilepic.jpg" alt="" />
+                    </div>
+                    <h1 align="center"><a href="#">Dominic Makana Ocharo</a></h1>
+                    <h1 align="center"><a href="#">Portfolio Website</a></h1>
+                    <p style="text-align: left;">
+                        Welcome to my digital space! I am Dominic Makana Ocharo, a versatile professional with expertise in Telecommunications Engineering, Data Science, 
+                        Data Analysis, Power Apps Development, and Networking. Leveraging my academic background from Jomo Kenyatta University of Agriculture and 
+                        Technology, I bring over five years of hands-on experience to the tech arena. Explore my journey, skills, and projects as we delve into the 
+                        dynamic world of innovation and technology. Get me on Linkedin:
+                         <a href="https://www.linkedin.com/in/dominic-ocharo-87a601212">@Dominic Ocharo</a><br /></a></p>
+                    <style>
+                            .centered-ul {
+                              display: flex;
+                              justify-content: center;
+                            }
+                    </style>
+                    <ul class="centered-ul">
+                        <li><a href="https://drive.google.com/file/d/1mflQ3b8i-XvECR4_dcCv-TMUarq9MUZt/view?usp=sharing" 
+                            class="button primary icon solid fa-download">View Resume </a></li>
+                        <li><a href="#one" class="button icon solid fa-chevron-down scrolly">More</a></li>
+                    </ul>
+                </div>
+            </header>
 
 		<!-- One -->
 			<section id="one" class="wrapper style2 special">
