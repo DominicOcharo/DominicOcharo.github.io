@@ -24,6 +24,56 @@
                 width: 100%; /* Make sure the image fits inside the circle */
                 height: auto; /* Keep aspect ratio */
             }
+            /* CSS for the tabbed interface */
+            .tabs input[type="radio"] {
+                display: none;
+            }
+            .tabs nav {
+                overflow: hidden;
+            }
+            .tabs nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .tabs nav ul li {
+                float: left;
+                margin-right: 5px;
+            }
+            .tabs nav ul li label {
+                background: #f5f5f5;
+                border: 1px solid #ccc;
+                border-bottom: none;
+                cursor: pointer;
+                display: block;
+                padding: 10px 20px;
+                position: relative;
+                top: 1px;
+                z-index: 1;
+            }
+            .tabs nav ul li label:hover {
+                background: #e5e5e5;
+            }
+            .tabs nav ul li label h2 {
+                font-size: 16px;
+                margin: 0;
+            }
+            .tabs .projects {
+                clear: both;
+                padding: 20px;
+            }
+            .tabs .content {
+                display: none;
+            }
+            .tabs input[type="radio"]:checked + nav label {
+                background: #e5e5e5;
+            }
+            .tabs input[type="radio"]:checked + nav label h2 {
+                color: #333;
+            }
+            .tabs input[type="radio"]:checked ~ .projects .content {
+                display: block;
+            }
         </style>
     </head>
     <body class="is-preload">
@@ -52,291 +102,95 @@
                     <ul class="centered-ul">
                         <li><a href="https://drive.google.com/file/d/1mflQ3b8i-XvECR4_dcCv-TMUarq9MUZt/view?usp=sharing" 
                             class="button primary icon solid fa-download">View Resume </a></li>
-                        <li><a href="#one" class="button icon solid fa-chevron-down scrolly">More</a></li>
+                        <li><a href="#projects" class="button icon solid fa-chevron-down scrolly">View Projects</a></li>
                     </ul>
                 </div>
             </header>
 
-		<!-- One -->
-			<section id="one" class="wrapper style2 special">
-				<header class="major">
-					<h2>Below is my project collections that showcases my skills and abilities in various fields including<br />
-						SQL, spreadsheets, Tableau, Power BI, Cloud and python programming.</h2>
-				</header>
-				<h2 class="skills-title">Skills</h2>
-						<ul class="icons labeled">
-							<li><span class="icon solid fa-chart-bar"><span class="label">Power BI</span></span></li>
-							<li><span class="icon solid fa-database"><span class="label">SQL</span></span></li>
-							<li><span class="icon brands fa-python"><span class="label">Python programming</span></span></li>
-							<li><span class="icon solid fa-code"><span class="label">Spreadsheets</span></span></li>
-							<li><span class="icon brands fa-buromobelexperte"><span class="label">Tableau</span></span></li>
-						</ul>
+        <!-- Projects -->
+        <section id="projects" class="wrapper style2 special">
+            <div class="tabs">
+                <input type="radio" id="tab1" name="tab-control" checked>
+                <input type="radio" id="tab2" name="tab-control">
+                <input type="radio" id="tab3" name="tab-control">
+                <input type="radio" id="tab4" name="tab-control">
+                <input type="radio" id="tab5" name="tab-control">
+                <nav>
+                    <ul>
+                        <li title="Tab 1" class="tab1">
+                            <label for="tab1" role="button">
+                                <h2>Malaria Detection</h2>
+                            </label>
+                        </li>
+                        <li title="Tab 2" class="tab2">
+                            <label for="tab2" role="button">
+                                <h2>Maize Pests and Disease Detection</h2>
+                            </label>
+                        </li>
+                        <li title="Tab 3" class="tab3">
+                            <label for="tab3" role="button">
+                                <h2>Tableau Projects</h2>
+                            </label>
+                        </li>
+                        <li title="Tab 4" class="tab4">
+                            <label for="tab4" role="button">
+                                <h2>School Project Prototype</h2>
+                            </label>
+                        </li>
+                        <li title="Tab 5" class="tab5">
+                            <label for="tab5" role="button">
+                                <h2>Predicting Daily Bicycle Rental Demand</h2>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="projects">
+                    <!-- Tab 1: Malaria Detection -->
+                    <div class="content tab1">
+                        <h2>Malaria Detection Using Deep Learning</h2>
+                        <p>May, 2024</p>
+                        <p>This project aims to develop a deep learning model for classifying whether a blood smear image is infected with malaria or uninfected.</p>
+                        <a href="https://github.com/DominicOcharo/Malaria-detection/tree/main" class="button">View Project</a>
+                    </div>
+                    <!-- Tab 2: Maize Pests and Disease Detection -->
+                    <div class="content tab2">
+                        <h2>DL POWERED PEST AND DISEASE IDENTIFICATION AND REMEDY RECOMMENDATION IN MAIZE</h2>
+                        <p>April, 2024</p>
+                        <p>This project seeks to develop a deep learning-powered system capable of identifying pests and diseases affecting maize crops...</p>
+                        <a href="https://github.com/DominicOcharo/Maize-pests-and-disease-detection/tree/main" class="button">View Project</a>
+                    </div>
+                    <!-- Tab 3: Tableau Projects -->
+                    <div class="content tab3">
+                        <h2>Data Visualization Projects Using Tableau</h2>
+                        <p>March, 2024</p>
+                        <p>These projects involve creating interactive data visualizations using Tableau software to explore various datasets...</p>
+                        <a href="https://public.tableau.com/app/profile/dominic.ocharo" class="button">View Projects</a>
+                    </div>
+                    <!-- Tab 4: School Project Prototype -->
+                    <div class="content tab4">
+                        <h2>School Management System Prototype</h2>
+                        <p>February, 2024</p>
+                        <p>This project is a prototype of a web-based school management system designed to streamline administrative tasks...</p>
+                        <a href="https://github.com/DominicOcharo/School-project-prototype" class="button">View Project</a>
+                    </div>
+                    <!-- Tab 5: Predicting Daily Bicycle Rental Demand -->
+                    <div class="content tab5">
+                        <h2>Predicting Daily Bicycle Rental Demand Using Machine Learning</h2>
+                        <p>January, 2023</p>
+                        <p>This project is a machine-learning model that predicts the number of bicycles rented in a single day using various data inputs...</p>
+                        <a href="https://github.com/DominicOcharo/Bicycle-rental-prediction/tree/main" class="button">View Project</a>
+                    </div>
+                </section>
+            </div>
+        </section>
 
-				<h2>Courses</h2>
-    <ul style="list-style-type: none; padding-left: 0;">
-        <li>
-            <strong>Microsoft Certified: Power Platform Developer Associate</strong><br>
-            <span style="font-style: italic;">March 2023 - September 2023, Online</span><br>
-            <a href="https://learn.microsoft.com/api/credentials/share/en-us/DominicOcharo-7999/591D0943204C429C?sharingId=269E9756748B0669" class="button">View Credentials</a>
-        </li>
-        <li>
-            <strong>Microsoft Certified: Azure Data Scientist Associate</strong><br>
-            <span style="font-style: italic;">August 2022 - February 2023, Online</span><br>
-            <a href="https://learn.microsoft.com/api/credentials/share/en-gb/DominicOcharo-7999/191EC41533110271?sharingId=269E9756748B0669" class="button">View Credentials</a>
-        </li>
-        <li>
-            <strong>Google Data Analytics Professional Certificate</strong><br>
-            <span style="font-style: italic;">May 2022 - September 2022, Online</span><br>
-            <a href="https://www.credly.com/badges/5992b1bf-63f4-4b23-8977-157e7d59fec4" class="button">View Credentials</a>
-        </li>
-        <li>
-            <strong>CCNA: Enterprise Networking, Security and Automation</strong><br>
-            <span style="font-style: italic;">February 2022 – May 2022, Online</span><br>
-            <a href="https://www.credly.com/badges/e3faf162-e8d6-4de8-95c0-841e3a59ea60" class="button">View Credentials</a>
-        </li>
-        <li>
-            <strong>CCNA: Switching, Routing and Wireless Essentials</strong><br>
-            <span style="font-style: italic;">November 2021 – February 2022, Online</span><br>
-            <a href="https://www.credly.com/badges/59b15821-9fb0-4499-8514-c96a2f7e781e" class="button">View Credentials</a>
-        </li>
-        <li>
-            <strong>CISCO: Introduction to Cybersecurity</strong><br>
-            <span style="font-style: italic;">October 2021 – November 2021, Online</span><br>
-            <a href="https://www.credly.com/badges/04daf2e8-b942-4254-aaa6-4d12659636c8" class="button">View Credentials</a>
-        </li>
-    </ul>
-			</section>
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">&copy; Dominic Ocharo. Credits: <a href="https://www.linkedin.com/in/dominic-ocharo-87a601212">@dominic_ocharo</a></p>
+        </footer>
 
-		<!-- Two -->
-			<section id="two" class="wrapper">
-				<div class="inner alt">
-
-
-			  <section class="spotlight">
-						<div class="image"><img src="images/malaria.jpg" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/Malaria-detection/tree/main">
-								Malaria Detection Using Deep Learning</a></h3>
-							<p style="text-align: left;">May, 2024<br />
-								This project aims to develop a deep learning model for classifying whether a blood smear image is infected with malaria or uninfected. 
-								Malaria is a serious global health issue affecting millions of people each year, particularly in tropical and subtropical regions. 
-								Rapid and accurate diagnosis is crucial for effective treatment and management of the disease. Leveraging advanced technology and 
-								artificial intelligence, this project seeks to provide a solution for automated malaria detection, potentially improving diagnostic accuracy 
-								and saving lives worldwide.
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/Malaria-detection/tree/main" class="button">View Project</a></li>
-							</ul>
-						</div>
-				</section>
-
-
-					
-				<section class="spotlight">
-    					<div class="image"><img src="images/predictions.PNG" alt="" width="231" height="231"/></div>
-    					   <div class="content">
-       					 	<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/Maize_Pests_and_Disease_Detection">DL POWERED PEST AND DISEASE IDENTIFICATION AND REMEDY RECOMMENDATION IN MAIZE</a></h3>
-        					<p style="text-align: left;">April, 2023 to January, 2024<br />
-            						Embarking on the intersection of deep learning and agriculture, this project introduces a robust system for identifying pests and diseases in maize plants, 
-            						offering tailored remedies for enhanced plant health. Leveraging a Convolutional Neural Network (CNN) trained on a diverse dataset, 
-            						the system excels in accurate classification. Its deployment includes a user-friendly website for image and video-based analysis, providing 
-            						farmers with practical insights. Moreover, real-time monitoring in the field is made possible through deployment on an Nvidia Jetson Nano. 
-            						Explore the project's innovations and potential impact <a href="https://pestanddisease.streamlit.app/">here</a>. 
-							Additionally, you can watch a video explaining the project process <a href="https://youtu.be/XMqZucJcloc?si=2Zac7P5Uv42kX3LE">here</a>.</p>
-       						 <ul class="actions special">
-            						<li><a href="https://github.com/DominicOcharo/Maize_Pests_and_Disease_Detection" class="button">View Project</a></li>
-       						 </ul>
-   					    </div>
-					</section>
-
-
-					
-					<section class="spotlight">
-						<div class="image"><img src="images/tableauupdated.png" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://public.tableau.com/app/profile/dominic.ocharo">Tableau Projects</a></h3>
-							<p style="text-align: left;">The link below contains my Tableau profile which includes a variety of data analytics projects that I have completed. 
-								These projects showcase my skills in data visualization and analysis. 
-								I invite you to explore my work and see how I can help you with your data analytics needs. 
-								Thank you for your time.</p>
-							<ul class="actions special">
-								<li><a href="https://public.tableau.com/app/profile/dominic.ocharo" class="button">View Profile</a></li>
-							</ul>
-						</div>
-					</section>
-
-
-					<section class="spotlight">
-						<div class="image"><img src="images/Plant Diseases.png" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/AI_Plant_Diseases_Prototype/tree/main">
-								School Project Prototype - AI Powered Pest and Disease Identification and Remedy Recomendation in Plants</a></h3>
-							<p style="text-align: left;">July, 2023<br />
-								We are excited to present our AI/Machine Learning final year school project that I will be working on alongside my partner Shadrack Ian Onjiri. 
-								We are aiming to come up with a physical model that can analyze the leaves of different plants and help identify the types of pests or diseases 
-								that are affecting them, as well as recommend remedies to deal with the problems. Incase of any feedback or help feel free to reach me via my LinkedIn, twitter or email as listed on this website. 
-								You can get the dataset in the following link
-								<a href="https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset"> Link</a></p>
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/AI_Plant_Diseases_Prototype/tree/main" class="button">View Project</a></li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="spotlight">
-						<div class="image"><img src="images/bicycle rental.jpg" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/Bicycle-rental-prediction/tree/main">
-								Predicting Daily Bicycle Rental Demand Using Machine Learning</a></h3>
-							<p style="text-align: left;">January, 2023<br />
-								This project is a machine-learning model that predicts the number of bicycles rented in a single day using various data inputs. 
-								The model utilizes techniques such as data preprocessing, feature engineering, and model training to make accurate predictions. 
-								The ultimate goal of this project is to provide insights and assist in decision-making for businesses in the bicycle rental industry.
-								Get the dataset in the following link
-								<a href="https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/ml-basics/daily-bike-share.csv"> Link</a></p>
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/Bicycle-rental-prediction/tree/main" class="button">View Project</a></li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="spotlight">
-						<div class="image"><img src="images/weather.png" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/Portfolio-Projects-1/tree/main">
-								Delhi Climate Analysis</a></h3>
-							<p style="text-align: left;">December, 2022<br />
-								The task of forecasting weather conditions for a specific location and time is known as weather forecasting. 
-								It is possible to forecast weather conditions for the next few days using weather data and algorithms. 
-								We need a dataset containing historical weather data for a specific location to forecast 
-								weather using Python. On Kaggle, I discovered a dataset based on New Delhi's daily weather data. 
-								This dataset can be used for weather forecasting. The dataset can be found in the following 
-								<a href=" https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data"> Link</a></p>
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/Portfolio-Projects-1/tree/main" class="button">View Project</a></li>
-							</ul>
-						</div>
-					</section>
-					
-					<section class="spotlight">
-						<div class="image"><img src="images/screen time.png" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/Phone-App-Screen-Time-Analysis/tree/main">
-								Phone App Screen Time Analysis</a></h3>
-							<p style="text-align: left;">November, 2022<br />
-								This is a phone screen time analysis project I created. This Python project analyzes screen time data from mobile apps using a dataset containing information about app usage, 
-								notifications, and times each app was opened. The analysis provides insights into usage patterns, notification frequency, and the relationship between usage and notifications. 
-								By visualizing and interpreting this data, users can gain a better understanding of their app usage habits and make informed decisions about managing screen time effectively.
-								The dataset can accessed from Kaggle using the following  
-								<a href=" https://statso.io/screen-time-analysis-case-study/"> Link</a></p>
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/Phone-App-Screen-Time-Analysis/tree/main" class="button">View Project</a></li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="spotlight">
-						<div class="image"><img src="images/data jobs analysis.png" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/Power-Bi-Projects/tree/main">
-								Data Jobs Analysis using Power BI</a></h3>
-							<p style="text-align: left;">November, 2022<br />
-								This is a power BI project that I completed. The report contains information on different data jobs, including data scientists and data analysts. 
-								It includes information on the average salary for each position, the skills required for each position, and the job outlook for each position.
-								Download the dataset using the following <a href="https://github.com/AlexTheAnalyst/Power-BI/blob/main/Power%20BI%20-%20Final%20Project.xlsx"> Link</a></p>
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/Power-Bi-Projects/tree/main" class="button">View Project</a></li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="spotlight">
-						<div class="image"><img src="images/COVID.jpg" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Covid%20SQL%20project%201.1.sql">
-								Covid-19 Analysis Using SQL</a></h3>
-							<p style="text-align: left;">November, 2022<br />
-								Covid-19 has been a global pandemic for over two years now. In that time, there has been a lot of research done on the virus and vaccinations.
-								This SQL project analyses that data to help understand the virus and vaccinations better.
-								Download the dataset using the following <a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/CovidVaccinations.xlsx"> Covid Vaccinations</a> and
-								<a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/CovidDeaths.xlsx"> Covid Deaths</a></p>
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Covid%20SQL%20project%201.1.sql" class="button">View Project</a></li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="spotlight">
-						<div class="image"><img src="images/sql cleaning.png" alt="" width="231" height="231"/></div>
-						<div class="content">
-							<h3 style="text-align: left;"><a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Nashville%20Housing%20proj%202.sql">
-								SQL Data Cleaning Project- Nashville Housing data</a></h3>
-							<p style="text-align: left;">November, 2022<br />
-								In this project, I was tasked with cleaning a Nashville Housing data set using SQL in order to make it usable for analysis. 
-								I used various SQL commands to filter and manipulate the data, and in the end, I was able to produce a clean and usable data set. 
-								This project showcases my ability to clean data using SQL. Download the dataset using the following 
-								<a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx"> Link</a></p>
-							<ul class="actions special">
-								<li><a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Nashville%20Housing%20proj%202.sql" class="button">View Project</a></li>
-							</ul>
-						</div>
-					</section>
-
-			
-					<section class="special">
-   					   <h2 class="skills-title">Thank you</h2>
-						<!-- Three
-							<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/dominic-ocharo-87a601212" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://twitter.com/dominic_ocharo" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/DominicOcharo" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul> -->
-					</section>
-
-			 
-
-		<!-- Three -->
-			<section id="three" class="wrapper style2 special">
-				<header class="major">
-					<h2>Contacts</h2>
-				</header>
-				<h2 class="skills-title">Social</h2>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/dominic-ocharo-87a601212" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://twitter.com/dominic_ocharo" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://github.com/DominicOcharo" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-				<section class="split contact">
-					<section class="alt">
-						<h3>Location</h3>
-						<p>Nairobi, Kenya</p>
-					</section>
-					<section>
-						<h3>Phone</h3>
-						<p>+254746073062</p>
-					</section>
-					<section>
-						<h3>Email</h3>
-						<p>ocharodominic01@gmail.com</p>
-					</section>
-				</section>
-				<ul class="actions special">
-					<li><a href="https://drive.google.com/file/d/1mflQ3b8i-XvECR4_dcCv-TMUarq9MUZt/view?usp=sharing" class="button primary icon solid fa-download">View Resume</a></li>
-					<li><a href="#" class="button">Back to top</a></li>
-				</ul>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">&copy; Dominic Ocharo. Credits: <a href="https://www.linkedin.com/in/dominic-ocharo-87a601212">@dominic_ocharo</a></p>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
