@@ -16,6 +16,7 @@ This website serves as a digital space where you can explore my journey, skills,
 
 - HTML
 - CSS
+- SCSS
 - JavaScript
 
 ## Project Structure
