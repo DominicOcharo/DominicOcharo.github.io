@@ -4,7 +4,7 @@ Welcome to my portfolio website! This repository contains the code for my portfo
 
 ## Overview
 
-This website serves as a digital space where you can explore my journey, skills, and projects. Here's a brief overview of what you'll find:
+This website is a digital space where you can explore my journey, skills, and projects. Here's a brief overview of what you'll find:
 
 - **Header**: Introduces myself and provides links to my LinkedIn profile and resume.
 - **Projects**: Displays a collection of my projects categorized by different technologies and domains.
@@ -21,14 +21,14 @@ This website serves as a digital space where you can explore my journey, skills,
 
 ## Project Structure
 
-- **index.html**: Main HTML file containing the structure of the website.
+- **index.html**: Main HTML file containing the website's structure.
 - **assets/**: Directory containing CSS and JavaScript files for styling and functionality.
 - **images/**: Directory containing images used in the website.
-- **README.md**: This file, containing information about the portfolio website.
+- **README.md**: This file, contains information about the portfolio website.
 
 ## How to View
 
-To view my portfolio website, simply open the `index.html` file in a web browser.
+To view my portfolio website, open the LINK `https://dominicocharo.github.io/`.
 
 ## Contact
 
