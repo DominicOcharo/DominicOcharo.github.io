@@ -10,388 +10,714 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <!-- Modern Portfolio Styles -->
+    <link rel="stylesheet" href="assets/css/modern-styles.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
-    <header class="header">
+    <header class="header modern-header">
+        <div class="header-background"></div>
         <div class="container">
-            <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/dominic.ocharo.7"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://twitter.com/dominic_ocharo"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/dominic-ocharo-339068343"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/DominicOcharo"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
-            </ul>  
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title" style="font-size: 54px; letter-spacing: -1px; margin-bottom: 5;">Dominic Makana Ocharo</h1>
-		<h1 class="header-title" style="font-size: 24px; letter-spacing: -1px; margin-bottom: 5;">  </h1>
-                <h6 class="header-mono" >Telecommunications Engineer | Data Analyst | Data Scientist | Power Apps Developer</h6>
-		<a href="https://drive.google.com/file/d/1okedmL6lIR8eK9L8lZR7lFH6dEaa5HCe/view?usp=sharing"><i class="ti-printer pr-2"></i>View Resume</a>
-                
+            <div class="header-content-wrapper">
+                <div class="header-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span class="greeting-text">Hello, I am</span>
+                    </div>
+                    <h1 class="header-title modern-title">
+                        <span class="name-highlight">Dominic Makana Ocharo</span>
+                    </h1>
+                    <div class="role-tags">
+                        <span class="role-tag">Telecommunications Engineer</span>
+                        <span class="role-tag">Data Analyst</span>
+                        <span class="role-tag">Data Scientist</span>
+                        <span class="role-tag">Power Apps Developer</span>
+                    </div>
+                    <div class="header-actions">
+                        <a href="https://drive.google.com/file/d/1okedmL6lIR8eK9L8lZR7lFH6dEaa5HCe/view?usp=sharing" class="btn btn-resume">
+                            <i class="ti-download"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-contact">
+                            <i class="ti-email"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-image">
+                    <div class="profile-image-container">
+                        <img src="assets/imgs/proff.JPG" alt="Dominic Ocharo" class="profile-image">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/dominic.ocharo.7" class="social-link facebook">
+                    <i class="ti-facebook"></i>
+                </a>
+                <a href="https://twitter.com/dominic_ocharo" class="social-link twitter">
+                    <i class="ti-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dominic-ocharo-339068343" class="social-link linkedin">
+                    <i class="ti-linkedin"></i>
+                </a>
+                <a href="https://github.com/DominicOcharo" class="social-link github">
+                    <i class="ti-github"></i>
+                </a>
             </div>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+    <nav class="navbar modern-navbar sticky-top navbar-expand-lg" data-spy="affix" data-offset-top="510">
         <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-brand">
+                <div class="brand-logo">
+                    <img src="assets/imgs/proff.JPG" alt="Dominic Ocharo" class="brand-img">
+                </div>
+                <div class="brand-text">
+                    <h5 class="brand-title">Dominic Ocharo</h5>
+                    <div class="brand-subtitle">Data Scientist & Engineer</div>
+                </div>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-		    <img src="assets/imgs/proff.JPG" alt="" class="brand-img" style="width: 150px; height: 180px;">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Dominic Makana Ocharo</h5>
-                        <div class="brand-subtitle">Telecommunications Engineer | Data Analyst | Data Scientist | Power Apps Developer</div>
-                    </li>
-                </ul>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#home" class="nav-link">
+                            <i class="ti-home"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">Projects</a>
+                        <a href="#about" class="nav-link">
+                            <i class="ti-user"></i>
+                            <span>About</span>
+                        </a>
                     </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">
+                            <i class="ti-file"></i>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">
+                            <i class="ti-video-camera"></i>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">
+                            <i class="ti-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="ti-email"></i>
+                            <span>Contact</span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">Professional Summary</h5>
-                <p class="mt-20">I am a Telecommunications Engineer with expertise in Data Science, Data Analysis, Power 
-			Apps Development, and Networking. Holding a Bachelor's degree in Telecommunications and Information 
-			Engineering from JKUAT, I possess over five years of practical experience. My proficiency includes 
-			data analytics using SQL, Tableau, Power BI, and Python. I am certified in Microsoft Power Platform 
-			Developer Associate and Azure Data Scientist Associate, reflecting my commitment to continuous learning 
-			and professional development. With a solid foundation in telecommunications and a track record in data 
-			analytics, I am ready to contribute to innovative projects in the tech industry.</p>
-                <a href="https://drive.google.com/file/d/1okedmL6lIR8eK9L8lZR7lFH6dEaa5HCe/view?usp=sharing" class="btn btn-outline-danger" download>
-    <i class="icon-down-circled2"></i>Download My CV </a>
-
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 23/11/1999</li>
-                    <li><span>Email</span> : ocharodominic01@gmail.com</li>
-		    <li><span>Alternate Email</span> : ocharodominic1@gmail.com </li>
-                    <li><span>Phone</span> : + 254746073062</li>
-                    <li><span>Location</span> :  Nairobi, Kenya</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/dominic.ocharo.7"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://twitter.com/dominic_ocharo"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/dominic-ocharo-339068343"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/DominicOcharo"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
-            </div>
-		<div class="col-lg-4 about-card">
-		    <h3 class="font-weight-light">My Expertise</h3>
-		    <span class="line mb-5"></span>
-		    <div class="row">
-		        <div class="col-1 text-danger pt-1"><i class="ti-mobile icon-lg"></i></div>
-		        <div class="col-10 ml-auto mr-3">
-		            <h6>Telecommunications Engineer</h6>
-		            <p class="subtitle">Expertise in telecommunications engineering.</p>
-		            <hr>
-		        </div>
-		    </div>
-		    <div class="row">
-		        <div class="col-1 text-danger pt-1"><i class="ti-pie-chart icon-lg"></i></div>
-		        <div class="col-10 ml-auto mr-3">
-		            <h6>Data Scientist</h6>
-		            <p class="subtitle">Proficient in data science and analytics.</p>
-		            <hr>
-		        </div>
-		    </div>
-		    <div class="row">
-		        <div class="col-1 text-danger pt-1"><i class="ti-bar-chart icon-lg"></i></div>
-		        <div class="col-10 ml-auto mr-3">
-		            <h6>Data Analyst</h6>
-		            <p class="subtitle">Skilled in data analysis and interpretation.</p>
-		            <hr>
-		        </div>
-		    </div>
-		    <div class="row">
-		        <div class="col-1 text-danger pt-1"><i class="ti-panel icon-lg"></i></div>
-		        <div class="col-10 ml-auto mr-3">
-		            <h6>Power Apps Developer</h6>
-		            <p class="subtitle">Proficiency in developing Power Apps solutions.</p>
-		            <hr>
-		        </div>
-		    </div>
-		</div>
-
-        </div>
-    </div>
-
-    <!--Resume Section-->
-    <section class="section" id="resume">
+    <section id="about" class="about-section modern-about">
         <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="section-header">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">Get to know more about my background and expertise</p>
+            </div>
+            
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-		<div class="card">
-		    <div class="card-header">
-		        <div class="mt-2">
-		            <h4>Expertise</h4>
-		            <span class="line"></span>  
-		        </div>
-		    </div>
-		    <div class="card-body">
-			<h6 class="title text-danger">MAY 2024 - DECEMBER 2024</h6>
-		        <p>Pavicon Kenya Limited / AI and Data Engineer</p>
-		        <p class="subtitle"><strong>Job Description:</strong> Machine Learning Projects Collaborator<br>
-    				Developed AI models for automating workplace tasks integrated into company systems.</p>
-		        <hr>
-			    
-		        <h6 class="title text-danger">JANUARY 2023 - APRIL 2023</h6>
-		        <p>Gearbox Academy / Machine Learning Attaché</p>
-		        <p class="subtitle"><strong>Job Description:</strong> Machine Learning Projects Collaborator<br>
-				Collaborated on projects including Plant Disease Detection and Face Recognition using platforms like NVIDIA Jetson Nano.</p>
-		        <hr>
-		        <h6 class="title text-danger">JANUARY 2022 - APRIL 2022</h6>
-		        <p>Imani Radio and Television Ministries / Attaché</p>
-		        <p class="subtitle"><strong>Job Description:</strong> Technical Operator and Electrician<br>
-				Managed studio setup, television servers, and electrical maintenance.</p>
-		        <hr>
-		        <h6 class="title text-danger">FEBRUARY 2021 - APRIL 2021</h6>
-		        <p>Imani Radio and Television Ministries / Attaché</p>
-		        <p class="subtitle"><strong>Job Description:</strong> Technical Operator and Electrician<br>
-				Handled studio setups, server management, and teleprompting during broadcasts.</p>
-		    </div>
-		</div>
-
+                <div class="col-lg-4 mb-4">
+                    <div class="about-card modern-card">
+                        <div class="card-icon">
+                            <i class="ti-user"></i>
+                        </div>
+                        <h3 class="card-title">Who am I?</h3>
+                        <div class="card-content">
+                            <p>I am a Telecommunications Engineer with expertise in Data Science, Data Analysis, Power Apps Development, and Networking. Holding a Bachelor's degree in Telecommunications and Information Engineering from JKUAT, I possess over five years of practical experience.</p>
+                            <p>My proficiency includes data analytics using SQL, Tableau, Power BI, and Python. I am certified in Microsoft Power Platform Developer Associate and Azure Data Scientist Associate, reflecting my commitment to continuous learning and professional development.</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1okedmL6lIR8eK9L8lZR7lFH6dEaa5HCe/view?usp=sharing" class="btn btn-download">
+                            <i class="ti-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-			<div class="card">
-			    <div class="card-header">
-			        <div class="mt-2">
-			            <h4>Education</h4>
-			            <span class="line"></span>  
-			        </div>
-			    </div>
-			    <div class="card-body">
-			        <h6 class="title text-danger">SEPTEMBER 2018 – JUNE 2024</h6>
-			        <p>Jomo Kenyatta University of Agriculture and Technology/ BSc. Telecommunication and Information Engineering</p>
-			        <p class="subtitle">I graduated with a Bachelor's degree program in Telecommunications and Information Engineering at 
-					Jomo Kenyatta University of Agriculture and Technology (JKUAT) on June 28th, 2024.</p>
-			        <hr>
-			        <h6 class="title text-danger">FEBRUARY 2014 – NOVEMBER 2017</h6>
-			        <p>St. Joseph’s Boys National School Kitale/ Highschool</p>
-			        <p class="subtitle">I attended my high school education at St. Joseph Boys High School in Kitale, 
-					Kenya where I graduated in 2017 with a KCSE mean grade of A-(minus).</p>
-			        <hr>
-			        <h6 class="title text-danger">JANUARY 2006 – NOVEMBER 2013</h6>
-			        <p>Mumias Sugar Complex Primary School/ Primary school</p>
-			        <p class="subtitle">KCPE score 407(A).</p>
-			    </div>
-			</div>
-
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="about-card modern-card">
+                        <div class="card-icon">
+                            <i class="ti-info"></i>
+                        </div>
+                        <h3 class="card-title">Personal Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="ti-calendar"></i>
+                                <div class="info-content">
+                                    <span class="info-label">Birthdate</span>
+                                    <span class="info-value">23/11/1999</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="ti-email"></i>
+                                <div class="info-content">
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value">ocharodominic01@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="ti-mobile"></i>
+                                <div class="info-content">
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-value">+254746073062</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="ti-location-pin"></i>
+                                <div class="info-content">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Nairobi, Kenya</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-			<div class="card">
-			    <div class="card-header">
-			        <div class="pull-left">
-			            <h4 class="mt-2">Skills</h4>
-			            <span class="line"></span>  
-			        </div>
-			    </div>
-			    <div class="card-body pb-2">
-			        <h6>Python</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-				<h6>Power BI</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 93%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-			        <h6>SQL</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-			        <h6>Excel</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-			        <h6>Tableau</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-			        <h6>Spreadsheets</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-			    </div>
-			</div>
-
-			<div class="card">
-			    <div class="card-header">
-			        <div class="pull-left">
-			            <h4 class="mt-2">Languages</h4>
-			            <span class="line"></span>  
-			        </div>
-			    </div>
-			    <div class="card-body pb-2">
-			        <h6>English</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-			        <h6>Swahili</h6>
-			        <div class="progress mb-3">
-			            <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-			        </div>
-			    </div>
-			</div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="about-card modern-card">
+                        <div class="card-icon">
+                            <i class="ti-star"></i>
+                        </div>
+                        <h3 class="card-title">My Expertise</h3>
+                        <div class="expertise-list">
+                            <div class="expertise-item">
+                                <div class="expertise-icon">
+                                    <i class="ti-mobile"></i>
+                                </div>
+                                <div class="expertise-content">
+                                    <h6>Telecommunications Engineer</h6>
+                                    <p>Expertise in telecommunications engineering and network systems.</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item">
+                                <div class="expertise-icon">
+                                    <i class="ti-pie-chart"></i>
+                                </div>
+                                <div class="expertise-content">
+                                    <h6>Data Scientist</h6>
+                                    <p>Proficient in data science, machine learning, and AI solutions.</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item">
+                                <div class="expertise-icon">
+                                    <i class="ti-bar-chart"></i>
+                                </div>
+                                <div class="expertise-content">
+                                    <h6>Data Analyst</h6>
+                                    <p>Skilled in data analysis, visualization, and business intelligence.</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item">
+                                <div class="expertise-icon">
+                                    <i class="ti-panel"></i>
+                                </div>
+                                <div class="expertise-content">
+                                    <h6>Power Apps Developer</h6>
+                                    <p>Proficiency in developing Power Apps and Power Platform solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-		<section class="section bg-dark text-center">
-		    <div class="container">
-		        <div class="row text-center">
-		            <div class="col-md-6 col-lg-3">
-		                <div class="row ">
-		                    <div class="col-5 text-right text-light border-right py-3">
-		                        <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-		                    </div>
-		                    <div class="col-7 text-left py-3">
-		                        <h1 class="text-danger font-weight-bold font40">5+</h1>
-		                        <p class="text-light mb-1">Years of Experience</p>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-6 col-lg-3">
-		                <div class="row">
-		                    <div class="col-5 text-right text-light border-right py-3">
-		                        <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-		                    </div>
-		                    <div class="col-7 text-left py-3">
-		                        <h1 class="text-danger font-weight-bold font40">20+</h1>
-		                        <p class="text-light mb-1">Projects Contributed</p>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-6 col-lg-3">
-		                <div class="row">
-		                    <div class="col-5 text-right text-light border-right py-3">
-		                        <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-		                    </div>
-		                    <div class="col-7 text-left py-3">
-		                        <h1 class="text-danger font-weight-bold font40">100%</h1>
-		                        <p class="text-light mb-1">Client Satisfaction</p>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-6 col-lg-3">
-		                <div class="row">
-		                    <div class="col-5 text-right text-light border-right py-3">
-		                        <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-		                    </div>
-		                    <div class="col-7 text-left py-3">
-		                        <h1 class="text-danger font-weight-bold font40">0</h1>
-		                        <p class="text-light mb-1">Coffee Consumed (I run on data!)</p>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</section>
+    <!--Resume Section-->
+    <section class="section modern-resume" id="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Resume</span></h2>
+                <p class="section-subtitle">My professional journey and achievements</p>
+            </div>
+            <div class="resume-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="experience">Experience</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                    <button class="tab-btn" data-tab="skills">Skills</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4>AI and Data Engineer</h4>
+                                        <span class="timeline-period">May 2024 - December 2024</span>
+                                    </div>
+                                    <h5 class="timeline-company">Pavicon Kenya Limited</h5>
+                                    <p class="timeline-description">Machine Learning Projects Collaborator - Developed AI models for automating workplace tasks integrated into company systems.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4>Machine Learning Attaché</h4>
+                                        <span class="timeline-period">January 2023 - April 2023</span>
+                                    </div>
+                                    <h5 class="timeline-company">Gearbox Academy</h5>
+                                    <p class="timeline-description">Machine Learning Projects Collaborator - Collaborated on projects including Plant Disease Detection and Face Recognition using platforms like NVIDIA Jetson Nano.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4>Technical Operator and Electrician</h4>
+                                        <span class="timeline-period">January 2022 - April 2022</span>
+                                    </div>
+                                    <h5 class="timeline-company">Imani Radio and Television Ministries</h5>
+                                    <p class="timeline-description">Managed studio setup, television servers, and electrical maintenance.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4>Technical Operator and Electrician</h4>
+                                        <span class="timeline-period">February 2021 - April 2021</span>
+                                    </div>
+                                    <h5 class="timeline-company">Imani Radio and Television Ministries</h5>
+                                    <p class="timeline-description">Handled studio setups, server management, and teleprompting during broadcasts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="education">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4>Bachelor of Science in Telecommunications and Information Engineering</h4>
+                                        <span class="timeline-period">September 2018 - June 2024</span>
+                                    </div>
+                                    <h5 class="timeline-company">Jomo Kenyatta University of Agriculture and Technology</h5>
+                                    <p class="timeline-description">Graduated with a Bachelor's degree program in Telecommunications and Information Engineering at JKUAT on June 28th, 2024.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4>High School Education</h4>
+                                        <span class="timeline-period">February 2014 - November 2017</span>
+                                    </div>
+                                    <h5 class="timeline-company">St. Joseph's Boys National School Kitale</h5>
+                                    <p class="timeline-description">Graduated in 2017 with a KCSE mean grade of A-(minus).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4>Primary School Education</h4>
+                                        <span class="timeline-period">January 2006 - November 2013</span>
+                                    </div>
+                                    <h5 class="timeline-company">Mumias Sugar Complex Primary School</h5>
+                                    <p class="timeline-description">KCPE score 407(A).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="skills">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3 class="category-title">Technical Skills</h3>
+                                <div class="skills-list">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Python</span>
+                                            <span class="skill-percentage">95%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="95"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Power BI</span>
+                                            <span class="skill-percentage">93%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="93"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">SQL</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="90"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Excel</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="90"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Tableau</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="90"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Spreadsheets</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="90"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3 class="category-title">Languages</h3>
+                                <div class="skills-list">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">English</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="90"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Swahili</span>
+                                            <span class="skill-percentage">98%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="98"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<section class="section" id="service">
-		    <div class="container">
-		        <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
-		        <div class="row">
-		            <div class="col-md-4 col-sm-6">
-		                <div class="card mb-5">
-		                   <div class="card-header has-icon">
-		                        <i class="ti-vector text-danger" aria-hidden="true"></i>
-		                    </div>
-		                    <div class="card-body px-4 py-3">
-		                        <h5 class="mb-3 card-title text-dark">Machine Learning</h5>
-		                        <P class="subtitle">I offer machine learning services including model creation and deployment on platforms like websites and electronic devices such as NVIDIA Jetson Nano and Raspberry Pi Pico.</P>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-4 col-sm-6">
-		                <div class="card mb-5">
-		                   <div class="card-header has-icon">
-		                        <i class="ti-write text-danger" aria-hidden="true"></i>
-		                    </div>
-		                    <div class="card-body px-4 py-3">
-		                        <h5 class="mb-3 card-title text-dark">Data Analytics</h5>
-		                        <P class="subtitle">I offer data analytics services using SQL, Tableau, Power BI, and Python to extract meaningful insights from diverse datasets.</P>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-4 col-sm-6">
-		                <div class="card mb-5">
-		                   <div class="card-header has-icon">
-		                        <i class="ti-package text-danger" aria-hidden="true"></i>
-		                    </div>
-		                    <div class="card-body px-4 py-3">
-		                        <h5 class="mb-3 card-title text-dark">Networking</h5>
-		                        <P class="subtitle">I provide networking services including enterprise networking, security, automation, switching, routing, and wireless essentials.</P>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-4 col-sm-6">
-		                <div class="card mb-5">
-		                   <div class="card-header has-icon">
-		                        <i class="ti-map-alt text-danger" aria-hidden="true"></i>
-		                    </div>
-		                    <div class="card-body px-4 py-3">
-		                        <h5 class="mb-3 card-title text-dark">Telecommunications</h5>
-		                        <P class="subtitle">I offer telecommunications services including network planning, design, implementation, and optimization.</P>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-4 col-sm-6">
-		                <div class="card mb-5">
-		                   <div class="card-header has-icon">
-		                        <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
-		                    </div>
-		                    <div class="card-body px-4 py-3">
-		                        <h5 class="mb-3 card-title text-dark">Data Science</h5>
-		                        <P class="subtitle">I offer data science services to extract meaningful insights from diverse datasets and build functional ML, AI and DL models.</P>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-md-4 col-sm-6">
-		                <div class="card mb-5">
-		                   <div class="card-header has-icon">
-		                        <i class="ti-support text-danger" aria-hidden="true"></i>
-		                    </div>
-		                    <div class="card-body px-4 py-3">
-		                        <h5 class="mb-3 card-title text-dark">Project Management</h5>
-		                        <P class="subtitle">I offer project management services including collaborative skills development, teamwork enhancement, and efficient project execution.</P>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</section>
+    <section class="section modern-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="ti-alarm-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="5">0</h3>
+                        <p class="stat-label">Years of Experience</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="ti-layers-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="20">0</h3>
+                        <p class="stat-label">Projects Contributed</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="ti-face-smile"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="100">0</h3>
+                        <p class="stat-label">Client Satisfaction</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="ti-heart-broken"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="0">0</h3>
+                        <p class="stat-label">Coffee Consumed <span class="stat-subtitle">(I run on data!)</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="section modern-services" id="service">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Services</span></h2>
+                <p class="section-subtitle">Comprehensive solutions for your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="ti-vector"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Machine Learning</h3>
+                        <p class="service-description">I offer machine learning services including model creation and deployment on platforms like websites and electronic devices such as NVIDIA Jetson Nano and Raspberry Pi Pico.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Model Development</span>
+                            <span class="feature-tag">Deployment</span>
+                            <span class="feature-tag">IoT Integration</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="ti-bar-chart"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Data Analytics</h3>
+                        <p class="service-description">I offer data analytics services using SQL, Tableau, Power BI, and Python to extract meaningful insights from diverse datasets.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">SQL Analysis</span>
+                            <span class="feature-tag">Visualization</span>
+                            <span class="feature-tag">Reporting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="ti-package"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Networking</h3>
+                        <p class="service-description">I provide networking services including enterprise networking, security, automation, switching, routing, and wireless essentials.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Enterprise Networks</span>
+                            <span class="feature-tag">Security</span>
+                            <span class="feature-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="ti-map-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Telecommunications</h3>
+                        <p class="service-description">I offer telecommunications services including network planning, design, implementation, and optimization.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Network Planning</span>
+                            <span class="feature-tag">Design</span>
+                            <span class="feature-tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="ti-pie-chart"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Data Science</h3>
+                        <p class="service-description">I offer data science services to extract meaningful insights from diverse datasets and build functional ML, AI and DL models.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">ML Models</span>
+                            <span class="feature-tag">AI Solutions</span>
+                            <span class="feature-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="ti-support"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Project Management</h3>
+                        <p class="service-description">I offer project management services including collaborative skills development, teamwork enhancement, and efficient project execution.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Collaboration</span>
+                            <span class="feature-tag">Teamwork</span>
+                            <span class="feature-tag">Execution</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog & Video Section -->
+    <section class="section modern-blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest <span class="text-gradient">Insights</span></h2>
+                <p class="section-subtitle">Tutorials, insights, and data analysis walkthroughs</p>
+            </div>
+            
+            <!-- Featured Video -->
+            <div class="featured-video">
+                <div class="video-container">
+                    <div class="video-header">
+                        <div class="video-badge">
+                            <i class="ti-video-camera"></i>
+                            <span>Featured Tutorial</span>
+                        </div>
+                        <div class="video-date">
+                            <i class="ti-calendar"></i>
+                            <span>Latest</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-wrapper">
+                        <video controls poster="assets/imgs/video-poster.jpg">
+                            <source src="assets/videos/blogVideo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <div class="video-content">
+                        <h3 class="video-title">AI-Driven Data Analysis Platform Tutorial</h3>
+                        <p class="video-description">
+                            In this video, I walk you through a powerful AI-driven platform that allows you to upload, analyze, and visualize your data. Learn how to generate meaningful insights, create visualizations, and get automatic answers to your questions—without needing any technical expertise. Whether you're working with business data, survey results, or any dataset, this tool leverages advanced machine learning models to make data analysis easy and efficient.
+                        </p>
+                        
+                        <div class="video-features">
+                            <h4>What you'll learn:</h4>
+                            <ul class="feature-list">
+                                <li><i class="ti-check"></i> How to upload and process Excel data</li>
+                                <li><i class="ti-check"></i> Generating detailed insights and summaries from your data</li>
+                                <li><i class="ti-check"></i> Automatically creating charts and visualizations</li>
+                                <li><i class="ti-check"></i> Getting AI-driven answers to your data-related questions</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="video-cta">
+                            <p>If you want to simplify your data analysis process and unlock valuable insights from your datasets, this tool is for you. Watch the video to see how it works!</p>
+                            <a href="https://www.youtube.com/watch?v=wT2G1mEkTZM" class="btn btn-watch" target="_blank">
+                                <i class="ti-youtube"></i>
+                                <span>Watch on YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Past Blogs Section -->
+            <div class="past-blogs">
+                <div class="blogs-header">
+                    <h3 class="blogs-title">Past Blogs & Tutorials</h3>
+                    <p class="blogs-subtitle">Explore my previous insights and tutorials</p>
+                </div>
+                
+                <div class="blogs-grid">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <i class="ti-file-text"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="ti-calendar"></i>
+                                    Coming Soon
+                                </span>
+                                <span class="blog-category">Tutorial</span>
+                            </div>
+                            <h4 class="blog-title">Advanced Data Visualization Techniques</h4>
+                            <p class="blog-excerpt">Learn advanced techniques for creating compelling data visualizations that tell a story...</p>
+                            <a href="#" class="blog-link">Read More <i class="ti-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <i class="ti-file-text"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="ti-calendar"></i>
+                                    Coming Soon
+                                </span>
+                                <span class="blog-category">Insights</span>
+                            </div>
+                            <h4 class="blog-title">Machine Learning Best Practices</h4>
+                            <p class="blog-excerpt">Essential best practices for building robust machine learning models...</p>
+                            <a href="#" class="blog-link">Read More <i class="ti-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <i class="ti-file-text"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="ti-calendar"></i>
+                                    Coming Soon
+                                </span>
+                                <span class="blog-category">Case Study</span>
+                            </div>
+                            <h4 class="blog-title">Real-World Data Analysis Project</h4>
+                            <p class="blog-excerpt">A detailed walkthrough of a real-world data analysis project from start to finish...</p>
+                            <a href="#" class="blog-link">Read More <i class="ti-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="section bg-dark py-5">
         <div class="container text-center">
@@ -400,386 +726,693 @@
     </section>
 
 <!-- Portfolio Section -->
-<section class="section bg-custom-gray" id="portfolio">
+<section class="section modern-portfolio" id="portfolio">
     <div class="container">
-        <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
-        <div class="portfolio">
-            <div class="filters">
-                <div class="row justify-content-center">
-                    <a href="#" data-filter=".new" class="active text-center d-flex align-items-center">
-                        <h2 style="font-weight: bold; margin-right: 6px;">Featured</h2>
-                        <h2 style="font-weight: bold;">Projects</h2>
-                    </a>
+        <div class="section-header">
+            <h2 class="section-title">My <span class="text-white">Portfolio</span></h2>
+            <p class="section-subtitle">Featured projects showcasing my expertise in data science and engineering</p>
+        </div>
+        
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+            <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+            <button class="filter-btn" data-filter="visualization">Visualization</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-card" data-category="machine-learning">
+                <div class="portfolio-image">
+                    <img src="assets/imgs/DLMaizepredictions.jpg" alt="DL Maize Predictions">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/DominicOcharo/Maize_Pests_and_Disease_Detection" class="portfolio-link" target="_blank">
+                                <i class="ti-github"></i>
+                            </a>
+                            <a href="https://pestanddisease.streamlit.app/" class="portfolio-link" target="_blank">
+                                <i class="ti-world"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Agriculture</span>
+                    </div>
+                    <h3 class="portfolio-title">DL Powered Pest and Disease Identification in Maize</h3>
+                    <p class="portfolio-description">Advanced deep learning system for identifying pests and diseases in maize plants with remedy recommendations.</p>
+                    <div class="portfolio-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Streamlit</span>
+                        <span>NVIDIA Jetson</span>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-container"> 
-                <div class="col-md-6 col-lg-4 web new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/DLMaizepredictions.jpg" class="img-fluid" alt="Project 1">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/project-1.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">DL Powered Pest and Disease Identification and Remedy Recommendation in Maize</h6>
-                                <p class="subtitle">View Full project <a href="https://github.com/DominicOcharo/Maize_Pests_and_Disease_Detection">HERE</a>.</p>
-                            </div>
-                        </div>   
-                    </div>             
+            
+            <div class="portfolio-card" data-category="machine-learning">
+                <div class="portfolio-image">
+                    <img src="assets/imgs/malaria.jpg" alt="Malaria Detection">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/DominicOcharo/Malaria-detection/tree/main" class="portfolio-link" target="_blank">
+                                <i class="ti-github"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-4 web new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/malaria.jpg" class="img-fluid" alt="Project 2">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/project-2.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">Malaria Detection Using Deep Learning</h6>
-                                <p class="subtitle">View Full project <a href="https://github.com/DominicOcharo/Malaria-detection/tree/main">HERE</a>.</p>
-                            </div>
-                        </div> 
-                    </div>                         
+                <div class="portfolio-content">
+                    <div class="portfolio-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Medical AI</span>
+                        <span class="tag">Image Classification</span>
+                    </div>
+                    <h3 class="portfolio-title">Malaria Detection Using Deep Learning</h3>
+                    <p class="portfolio-description">Automated malaria detection system using deep learning to analyze blood smear images for rapid diagnosis.</p>
+                    <div class="portfolio-tech">
+                        <span>Python</span>
+                        <span>Keras</span>
+                        <span>OpenCV</span>
+                        <span>CNN</span>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-4 web new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/tableauupdated.jpg" class="img-fluid" alt="Project 3">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/project-3.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">Tableau Projects</h6>
-                                <p class="subtitle">View Full Profile <a href="https://public.tableau.com/app/profile/dominic.ocharo">HERE</a>.</p>
-                            </div>
-                        </div> 
-                    </div>                         
+            </div>
+            
+            <div class="portfolio-card" data-category="visualization">
+                <div class="portfolio-image">
+                    <img src="assets/imgs/tableauupdated.jpg" alt="Tableau Projects">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-actions">
+                            <a href="https://public.tableau.com/app/profile/dominic.ocharo" class="portfolio-link" target="_blank">
+                                <i class="ti-bar-chart"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-            </div> 
-        </div>  
-    </div>            
+                <div class="portfolio-content">
+                    <div class="portfolio-tags">
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Business Intelligence</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <h3 class="portfolio-title">Tableau Data Visualization Projects</h3>
+                    <p class="portfolio-description">Comprehensive collection of interactive dashboards and data visualizations across various domains.</p>
+                    <div class="portfolio-tech">
+                        <span>Tableau</span>
+                        <span>SQL</span>
+                        <span>Data Modeling</span>
+                        <span>Dashboard Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- End of portfolio section -->
 
-    <section class="section" id="blog">
+    <section class="section modern-projects" id="blog">
         <div class="container">
-            <h2 class="mb-5">Project <span class="text-danger">Collection</span></h2>
-            <div class="row">
+            <div class="section-header">
+                <h2 class="section-title">Project <span class="text-gradient">Collection</span></h2>
+                <p class="section-subtitle">Explore my diverse range of data science and engineering projects</p>
+            </div>
+            
+            <div class="projects-grid">
 
-		<!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/customer_churn.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/customer_churn.png" alt="Customer Churn Analysis">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/Customer-Churn-Analysis" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h6 class="title">Customer Churn Analysis</h6>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo  
-			    <i class="ti-calendar"></i> June 2024
-			</p>
-                        
-                        <p>This project performs an exploratory data analysis (EDA) on a customer churn dataset to understand the factors contributing to customer churn. 
-				The dataset is from a telecommunications company and contains various features related to customer demographics, account information, and 
-				service usage. You can get the dataset in the following link from <a href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data"> Kaggle</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/Customer-Churn-Analysis" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                June 2024
+                            </span>
+                            <span class="project-category">Data Analysis</span>
+                        </div>
+                        <h3 class="project-title">Customer Churn Analysis</h3>
+                        <p class="project-description">Comprehensive exploratory data analysis on telecommunications customer churn dataset to identify key factors contributing to customer attrition and develop predictive insights.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/Customer-Churn-Analysis" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
-		<!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/malaria1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/malaria1.jpg" alt="Malaria Detection">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/Malaria-detection/tree/main" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h6 class="title">Malaria Detection Using Deep Learning</h6>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo  
-			    <i class="ti-calendar"></i> May 2024
-			</p>
-                        
-                        <p>This project aims to develop a deep learning model for classifying whether a blood smear image is infected with malaria or uninfected. 
-				Malaria is a serious global health issue affecting millions of people each year, particularly in tropical and subtropical regions. 
-				Rapid and accurate diagnosis is crucial for effective treatment and management of the disease. Leveraging advanced technology and 
-				artificial intelligence, this project seeks to provide a solution for automated malaria detection, potentially improving diagnostic accuracy 
-				and saving lives worldwide. </p>
-
-                        <a href="https://github.com/DominicOcharo/Malaria-detection/tree/main" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                May 2024
+                            </span>
+                            <span class="project-category">Deep Learning</span>
+                        </div>
+                        <h3 class="project-title">Malaria Detection Using Deep Learning</h3>
+                        <p class="project-description">Advanced deep learning model for automated malaria detection from blood smear images, providing rapid and accurate diagnosis to improve healthcare outcomes in malaria-endemic regions.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Keras</span>
+                            <span>CNN</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/Malaria-detection/tree/main" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/DLMaizepredictions.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/DLMaizepredictions.jpg" alt="DL Maize Predictions">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/Maize_Pests_and_Disease_Detection" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://pestanddisease.streamlit.app/" class="project-link" target="_blank">
+                                    <i class="ti-world"></i>
+                                </a>
+                                <a href="https://youtu.be/XMqZucJcloc?si=2Zac7P5Uv42kX3LE" class="project-link" target="_blank">
+                                    <i class="ti-video-camera"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h6 class="title">DL Powered Pest and Disease Identification and Remedy Recommendation in Maize</h6>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo  
-			    <i class="ti-calendar"></i> July,2023 to January,2024
-			</p>
-                        
-                        <p> Embarking on the intersection of deep learning and agriculture, this project introduces a robust system for identifying pests and diseases in maize plants, 
-				offering tailored remedies for enhanced plant health. Leveraging a Convolutional Neural Network (CNN) trained on a diverse dataset, 
-				the system excels in accurate classification. Its deployment includes a user-friendly website for image and video-based analysis, providing 
-				farmers with practical insights. Moreover, real-time monitoring in the field is made possible through deployment on an Nvidia Jetson Nano. 
-				Explore the project's innovations and potential impact <a href="https://pestanddisease.streamlit.app/">HERE</a>. 
-				Additionally, you can watch a video explaining the project process <a href="https://youtu.be/XMqZucJcloc?si=2Zac7P5Uv42kX3LE">HERE</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/Maize_Pests_and_Disease_Detection" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                July 2023 - January 2024
+                            </span>
+                            <span class="project-category">Agriculture AI</span>
+                        </div>
+                        <h3 class="project-title">DL Powered Pest and Disease Identification in Maize</h3>
+                        <p class="project-description">Comprehensive deep learning system for identifying pests and diseases in maize plants with remedy recommendations, featuring web deployment and real-time field monitoring capabilities.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Streamlit</span>
+                            <span>NVIDIA Jetson</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/Maize_Pests_and_Disease_Detection" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 		    
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/tableauupdated.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/tableauupdated.jpg" alt="Tableau Projects">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://public.tableau.com/app/profile/dominic.ocharo" class="project-link" target="_blank">
+                                    <i class="ti-bar-chart"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">Tableau Projects</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-heart text-danger"></i> 234
-			</p>
-                        
-                        <p> The link below contains my Tableau profile which includes a variety of data analytics projects that I have completed. 
-				These projects showcase my skills in data visualization and analysis. I invite you to explore my work and see how I can help you with your data analytics needs. 
-				Thank you for your time</p>
-
-                        <a href="https://public.tableau.com/app/profile/dominic.ocharo" class="read-more">View profile <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                Ongoing
+                            </span>
+                            <span class="project-category">Data Visualization</span>
+                        </div>
+                        <h3 class="project-title">Tableau Data Visualization Projects</h3>
+                        <p class="project-description">Comprehensive collection of interactive dashboards and data visualizations showcasing advanced analytics skills across various business domains and industries.</p>
+                        <div class="project-tech">
+                            <span>Tableau</span>
+                            <span>SQL</span>
+                            <span>Data Modeling</span>
+                            <span>Dashboard Design</span>
+                        </div>
+                        <a href="https://public.tableau.com/app/profile/dominic.ocharo" class="project-btn" target="_blank">
+                            <span>View Profile</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/Plant Diseases.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/Plant Diseases.jpg" alt="AI Plant Disease Detection">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/AI_Plant_Diseases_Prototype/tree/main" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">School Project Prototype - AI Powered Pest and Disease Identification and Remedy Recomendation in Plants</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-calendar"></i> July,2023
-			</p>
-                        
-                        <p> We are excited to present our AI/Machine Learning final year school project that I will be working on alongside my partner Shadrack Ian Onjiri. 
-				We are aiming to come up with a physical model that can analyze the leaves of different plants and help identify the types of pests or diseases 
-				that are affecting them, as well as recommend remedies to deal with the problems. Incase of any feedback or help feel free to reach me via my LinkedIn, twitter or email as listed on this website. 
-				You can get the dataset in the following <a href="https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset"> LINK</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/AI_Plant_Diseases_Prototype/tree/main" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                July 2023
+                            </span>
+                            <span class="project-category">AI Prototype</span>
+                        </div>
+                        <h3 class="project-title">AI Powered Plant Disease Detection Prototype</h3>
+                        <p class="project-description">Final year school project developing an AI-powered system for identifying plant diseases and pests with remedy recommendations, featuring physical model implementation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Computer Vision</span>
+                            <span>Agriculture</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/AI_Plant_Diseases_Prototype/tree/main" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/bicycle rental.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/bicycle rental.jpg" alt="Bicycle Rental Prediction">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/Bicycle-rental-prediction/tree/main" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/ml-basics/daily-bike-share.csv" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">Predicting Daily Bicycle Rental Demand Using Machine Learning</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-calendar"></i> January,2023
-			</p>
-                        
-                        <p> This project is a machine-learning model that predicts the number of bicycles rented in a single day using various data inputs. 
-				The model utilizes techniques such as data preprocessing, feature engineering, and model training to make accurate predictions. 
-				The ultimate goal of this project is to provide insights and assist in decision-making for businesses in the bicycle rental industry.
-				Get the dataset in the following
-				<a href="https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/ml-basics/daily-bike-share.csv"> LINK</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/Bicycle-rental-prediction/tree/main" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                January 2023
+                            </span>
+                            <span class="project-category">Machine Learning</span>
+                        </div>
+                        <h3 class="project-title">Bicycle Rental Demand Prediction</h3>
+                        <p class="project-description">Machine learning model for predicting daily bicycle rental demand using advanced data preprocessing, feature engineering, and model training techniques to assist business decision-making.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                            <span>Regression</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/Bicycle-rental-prediction/tree/main" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/weather.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/weather.jpg" alt="Delhi Climate Analysis">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/Portfolio-Projects-1/tree/main" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">Delhi Climate Analysis</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-calendar"></i> December,2022
-			</p>
-                        
-                        <p> The task of forecasting weather conditions for a specific location and time is known as weather forecasting. 
-				It is possible to forecast weather conditions for the next few days using weather data and algorithms. 
-				We need a dataset containing historical weather data for a specific location to forecast 
-				weather using Python. On Kaggle, I discovered a dataset based on New Delhi's daily weather data. 
-				This dataset can be used for weather forecasting. The dataset can be found in the following 
-				<a href=" https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data"> LINK</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/Portfolio-Projects-1/tree/main" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                December 2022
+                            </span>
+                            <span class="project-category">Time Series</span>
+                        </div>
+                        <h3 class="project-title">Delhi Climate Analysis & Forecasting</h3>
+                        <p class="project-description">Comprehensive climate analysis and weather forecasting project using historical weather data from New Delhi, implementing time series analysis and predictive modeling techniques.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Time Series</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/Portfolio-Projects-1/tree/main" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/screen time.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/screen time.jpg" alt="Screen Time Analysis">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/Phone-App-Screen-Time-Analysis/tree/main" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://statso.io/screen-time-analysis-case-study/" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">Phone App Screen Time Analysis</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-calendar"></i> November,2022
-			</p>
-                        
-                        <p> This is a phone screen time analysis project I created. This Python project analyzes screen time data from mobile apps using a dataset containing information about app usage, 
-				notifications, and times each app was opened. The analysis provides insights into usage patterns, notification frequency, and the relationship between usage and notifications. 
-				By visualizing and interpreting this data, users can gain a better understanding of their app usage habits and make informed decisions about managing screen time effectively. 
-				The dataset can accessed from Kaggle using the following 
-				<a href=" https://statso.io/screen-time-analysis-case-study/"> LINK</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/Phone-App-Screen-Time-Analysis/tree/main" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                November 2022
+                            </span>
+                            <span class="project-category">Data Analysis</span>
+                        </div>
+                        <h3 class="project-title">Phone App Screen Time Analysis</h3>
+                        <p class="project-description">Comprehensive analysis of mobile app usage patterns, notification frequency, and screen time data to provide insights into digital habits and usage behavior.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/Phone-App-Screen-Time-Analysis/tree/main" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
 
-              <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/data jobs analysis.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/data jobs analysis.jpg" alt="Data Jobs Analysis">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/Power-Bi-Projects/tree/main" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://github.com/AlexTheAnalyst/Power-BI/blob/main/Power%20BI%20-%20Final%20Project.xlsx" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">Data Jobs Analysis using Power BI</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-calendar"></i> November,2022
-			</p>
-                        
-                        <p> This is a power BI project that I completed. The report contains information on different data jobs, including data scientists and data analysts. 
-				It includes information on the average salary for each position, the skills required for each position, and the job outlook for each position. 
-				Download the dataset using the following <a href="https://github.com/AlexTheAnalyst/Power-BI/blob/main/Power%20BI%20-%20Final%20Project.xlsx"> LINK</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/Power-Bi-Projects/tree/main" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                November 2022
+                            </span>
+                            <span class="project-category">Business Intelligence</span>
+                        </div>
+                        <h3 class="project-title">Data Jobs Market Analysis</h3>
+                        <p class="project-description">Comprehensive Power BI dashboard analyzing the data jobs market, including salary trends, required skills, and job outlook for data scientists and analysts.</p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>Data Visualization</span>
+                            <span>Business Analytics</span>
+                            <span>Dashboard Design</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/Power-Bi-Projects/tree/main" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
-         <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/COVID.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/COVID.jpg" alt="COVID-19 Analysis">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Covid%20SQL%20project%201.1.sql" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/CovidVaccinations.xlsx" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">Covid-19 Analysis Using SQL</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-calendar"></i> November,2022
-			</p>
-                        
-                        <p> Covid-19 has been a global pandemic for over two years now. In that time, there has been a lot of research done on the virus and vaccinations. 
-				This SQL project analyses that data to help understand the virus and vaccinations better. 
-				Download the dataset using the following <a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/CovidVaccinations.xlsx"> Covid Vaccinations LINK</a> and 
-				<a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/CovidDeaths.xlsx"> Covid Deaths LINK</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Covid%20SQL%20project%201.1.sql" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                November 2022
+                            </span>
+                            <span class="project-category">SQL Analysis</span>
+                        </div>
+                        <h3 class="project-title">COVID-19 Global Analysis</h3>
+                        <p class="project-description">Comprehensive SQL analysis of COVID-19 global data including infection rates, vaccination progress, and mortality statistics to understand pandemic trends and patterns.</p>
+                        <div class="project-tech">
+                            <span>SQL</span>
+                            <span>Data Analysis</span>
+                            <span>Statistics</span>
+                            <span>Healthcare Data</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Covid%20SQL%20project%201.1.sql" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->	    
+                </div>	    
 
-         <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/sql cleaning.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/sql cleaning.jpg" alt="SQL Data Cleaning">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Nashville%20Housing%20proj%202.sql" class="project-link" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx" class="project-link" target="_blank">
+                                    <i class="ti-download"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-holder">
-                        <h4 class="title">SQL Data Cleaning Project- Nashville Housing data</h4>
-
-			<p class="post-details">
-			    By: Dominic Makana Ocharo
-			    <i class="ti-calendar"></i> November,2022
-			</p>
-                        
-                        <p> In this project, I was tasked with cleaning a Nashville Housing data set using SQL in order to make it usable for analysis. 
-				I used various SQL commands to filter and manipulate the data, and in the end, I was able to produce a clean and usable data set. 
-				This project showcases my ability to clean data using SQL. Download the dataset using the following 
-				<a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx"> LINK</a>.</p>
-
-                        <a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Nashville%20Housing%20proj%202.sql" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="ti-calendar"></i>
+                                November 2022
+                            </span>
+                            <span class="project-category">Data Cleaning</span>
+                        </div>
+                        <h3 class="project-title">Nashville Housing Data Cleaning</h3>
+                        <p class="project-description">Comprehensive SQL data cleaning project transforming raw Nashville housing data into a clean, analysis-ready dataset using advanced SQL techniques and data manipulation.</p>
+                        <div class="project-tech">
+                            <span>SQL</span>
+                            <span>Data Cleaning</span>
+                            <span>Data Transformation</span>
+                            <span>ETL</span>
+                        </div>
+                        <a href="https://github.com/DominicOcharo/SQL-Projects/blob/main/Nashville%20Housing%20proj%202.sql" class="project-btn" target="_blank">
+                            <span>View Project</span>
+                            <i class="ti-angle-double-right"></i>
+                        </a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
 
             </div>
         </div>
     </section>
+<!-- End of projects section -->
 
-    <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
+    <section class="section modern-contact" id="contact">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <p class="section-subtitle">Let's collaborate and bring your ideas to life</p>
+            </div>
+            
             <div class="row">
                 <div class="col-lg-8">
-		<div class="contact-form-card">
-		    <h4 class="contact-title">Send a message</h4>
-		    <form action="https://formspree.io/f/xyyrvdjz" method="POST">
-		        <div class="form-group">
-		            <label for="email">Your email:</label>
-		            <input type="email" id="email" name="email" class="form-control" required>
-		        </div>
-		        <div class="form-group">
-		            <label for="message">Your message:</label>
-		            <textarea id="message" name="message" class="form-control" rows="7" required></textarea>
-		        </div>
-		        <!-- your other form fields go here -->
-		        <div class="form-group">
-		            <button type="submit" class="form-control btn btn-primary">Send</button>
-		        </div>
-		    </form>
-		</div>
-
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Send me a message</h3>
+                        
+                        <!-- Success Message -->
+                        <div id="success-message" class="success-message" style="display: none;">
+                            <div class="success-icon">
+                                <i class="ti-check"></i>
+                            </div>
+                            <h4>Message Sent Successfully!</h4>
+                            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                        </div>
+                        
+                        <!-- Error Message -->
+                        <div id="error-message" class="error-message" style="display: none;">
+                            <div class="error-icon">
+                                <i class="ti-close"></i>
+                            </div>
+                            <h4>Oops! Something went wrong</h4>
+                            <p>Please try again or contact me directly at ocharodominic01@gmail.com</p>
+                        </div>
+                        
+                        <form id="contact-form" action="https://formspree.io/f/xyyrvdjz" method="POST" class="modern-form">
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="6" required placeholder="Tell me about your project or just say hello!"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-send" id="submit-btn">
+                                <span>Send Message</span>
+                                <i class="ti-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
+                
                 <div class="col-lg-4">
                     <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
+                        <h3 class="info-title">Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ti-mobile"></i>
                             </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ 254746073062</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Location :<br> <span class="text-muted">Nairobi, Kenya</span></h6>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+254746073062</p>
                             </div>
                         </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ti-email"></i>
                             </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">ocharodominic01@gmail.com</span></h6>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>ocharodominic01@gmail.com</p>
                             </div>
                         </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link" href="https://www.facebook.com/dominic.ocharo.7"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link" href="https://twitter.com/dominic_ocharo"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/dominic-ocharo-339068343"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link" href="https://github.com/DominicOcharo"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul> 
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ti-location-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-section">
+                            <h4>Follow Me</h4>
+                            <div class="social-links-contact">
+                                <a href="https://www.facebook.com/dominic.ocharo.7" class="social-link-contact facebook" target="_blank">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/dominic_ocharo" class="social-link-contact twitter" target="_blank">
+                                    <i class="ti-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/dominic-ocharo-339068343" class="social-link-contact linkedin" target="_blank">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/DominicOcharo" class="social-link-contact github" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <footer class="footer py-3">
+    </section>
+    <footer class="modern-footer">
         <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="https://www.linkedin.com/in/dominic-ocharo-339068343" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Dominic Ocharo</span></a> 
-            </p>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>Dominic Makana Ocharo</h3>
+                        <p>Telecommunications Engineer | Data Scientist | Power Apps Developer</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#resume">Resume</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#service">Data Analytics</a></li>
+                                <li><a href="#service">Machine Learning</a></li>
+                                <li><a href="#service">Power Apps</a></li>
+                                <li><a href="#service">Networking</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Connect</h4>
+                            <div class="footer-social">
+                                <a href="https://www.linkedin.com/in/dominic-ocharo-339068343" target="_blank">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/DominicOcharo" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                <a href="https://twitter.com/dominic_ocharo" target="_blank">
+                                    <i class="ti-twitter"></i>
+                                </a>
+                                <a href="https://www.facebook.com/dominic.ocharo.7" target="_blank">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; <script>document.write(new Date().getFullYear())</script> Dominic Makana Ocharo. All rights reserved.</p>
+                    </div>
+                    <div class="footer-made">
+                        <p>Made with <i class="ti-heart"></i> in Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -800,4 +1433,6 @@
     <script src="assets/js/johndoe.js"></script>
 
 </body>
+</html>
+
 </html>
